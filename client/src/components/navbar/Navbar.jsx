@@ -91,7 +91,7 @@ function Navbar() {
         
         <AppBar className={classes.component}>
             <div className={classes.logo}>
-                <a className={classes.first} href="/home">Pro<span className={classes.span}>Hub</span></a>
+                <a className={classes.first} href="/home">Ide<span className={classes.span}>ate</span></a>
             </div>
             <Toolbar className={classes.container}>
                 {Loading && <NavLink to={'/'} className={classes.link}><Typography>Home</Typography></NavLink>}

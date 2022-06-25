@@ -41,7 +41,7 @@ function Contact() {
                             <div className="icon"><Map/></div>
                             <div className="text">
                                 <h3>Address</h3>
-                                <p>SBJITMR, Yerla,<br/>Saoner Road, Nagpur</p>
+                                <p>xyz University, Nagpur</p>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@ function Contact() {
                             <div className="text">
                                 <h3>Phone</h3>
                                 <p>+91 9011694130</p>
-                                <p>+91 8855953408</p>
+                                <p>+0712-123-456</p>
                             </div>
                         </div>
 
