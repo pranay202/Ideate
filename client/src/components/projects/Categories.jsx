@@ -21,11 +21,11 @@ const useStyles = makeStyles({
         }
     },
     table: {
-        border: '1px solid rgba(224, 160, 221, 1)',
+        border: '1px solid #469be0',
         marginTop: 30
     },
     head: {
-        backgroundColor: 'rgba(224, 1, 221, 1)',
+        backgroundColor: '#469be0',
         color: 'white',
         fontSize: 17
     },

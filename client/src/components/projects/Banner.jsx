@@ -1,9 +1,10 @@
 import React from 'react';
 import { makeStyles, Box } from "@material-ui/core";
+import bannerImg from './../images/bannerImg.png';
 
 const useStyles = makeStyles({
     image: {
-        background: `url(${'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg'}) center/55% repeat-x #000`,
+        background: `url(${bannerImg}) center/100% repeat-x`,
         width: '100%',
         height: '50vh',
         display: 'flex',
