@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const Connection = async () => {
     try {
-        const MONGO_URL = "mongodb+srv://user:Pranay2329@prohub.xqthg.mongodb.net/Prohub?retryWrites=true&w=majority";
+        const MONGO_URL = process.env.MONGO_URL;
         await mongoose.connect(MONGO_URL, {
             useUnifiedTopology: true,
             useNewUrlParser: true
