@@ -1,9 +1,9 @@
-# Prohub - The Project Library for Institutes
+# Projecto - The Project Library for Institutes
 
 <table>
 <tr>
 <td>
-  Prohub provides you one safe place for all the projects created in your Institute!
+  Projecto provides you one safe place for all the projects created in your Institute!
 </td>
 </tr>
 </table>
@@ -31,7 +31,7 @@ To provide common knowledge platform for peer learning.
 <br>
 
 ## Demo
-Here is a working Demo : https://Prohub.herokuapp.com/
+Here is a working Demo : https://Projecto.vercel.app/
 
 ## Built with 
 
@@ -67,9 +67,9 @@ Here is a working Demo : https://Prohub.herokuapp.com/
 
 ### Clone the repo.
 
-<img src ="readme_assets/clone.png"></img>
+<img src ="readme_assets/clone-projecto.png"></img>
 ```
-git clone https://github.com/Pranay202/prohub.git
+git clone https://github.com/Pranay202/Projecto.git
 ```
 
 <!-- <img src ="readme_assets/images/clone.png"></img> -->
@@ -80,7 +80,7 @@ git clone https://github.com/Pranay202/prohub.git
 ### Open Terminal on the Folder
 
 ```
-cd prohub
+cd Projecto
 ```
 
 <br>
@@ -122,7 +122,6 @@ cd ../server
 
 [![Pranay Kharabe](https://avatars1.githubusercontent.com/u/68046838?v=3&s=144)](https://github.com/pranay202)
 
-[![Samyak Shambharkar](https://avatars1.githubusercontent.com/u/86425573?v=3&s=144)](https://github.com/samyakshambharkar)
 
 <!-- [![Ruchika Parshionikar](https://avatars1.githubusercontent.com/u/86425573?v=3&s=144)](https://github.com/samyakshambharkar) -->
 Copyright © 2022 [Pranay Kharabe ](https://github.com/pranay202)
