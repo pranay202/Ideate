@@ -34,7 +34,7 @@ const Login = () => {
 			<div className={styles.login_form_container}>
 				<div className={styles.left}>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Faculty/Admin</h1>
+						{/* <h1>Faculty/Admin</h1> */}
 						<h2>Login to Your Account</h2>
 						<input
 							type="email"
@@ -61,8 +61,8 @@ const Login = () => {
 					</form>
 				</div>
 				<div className={styles.right}>
-					<h1>Students</h1>
-					<h2>Login Here</h2>
+					{/* <h1>Students</h1> */}
+					<h2>Signup Here</h2>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
 						{/* <input
 							type="email"
@@ -73,10 +73,10 @@ const Login = () => {
 							required
 							className={styles.input}
 						/> */}
-						<Link to="/home">
+						<Link to="/signup">
 							{error && <div className={styles.error_msg}>{error}</div>}
 							<button type="button" className={styles.white_btn}>
-								Login
+								Signup
 							</button>
 						</Link>
 					</form>

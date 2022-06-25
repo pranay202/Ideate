@@ -40,7 +40,7 @@ const Signup = () => {
 		<div className={styles.signup_container}>
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>	
-					<h1>Welcome Back</h1>
+					<h2>Welcome Back</h2>
 					{Loading && <Link to="/login">
 						<button type="button" className={styles.white_btn}>
 							Sign In
@@ -49,7 +49,7 @@ const Signup = () => {
 				</div>
 				<div className={styles.right}>
 					<form className={styles.form_container} onSubmit={handleSubmit}>
-						<h1>Create Account</h1>
+						<h2  className={styles.heading}>Create Account</h2>
 						<input
 							type="text"
 							placeholder="First Name"
