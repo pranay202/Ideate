@@ -5,7 +5,7 @@ import Loading from "../Loading";
 
 const useStyles = makeStyles({
     component: {
-        background: '#000',
+        background: '#469be0',
         backdrop:'blur(5px)',
         color: '#ffff',
         display: 'flex',
@@ -18,7 +18,8 @@ const useStyles = makeStyles({
         textDecoration : 'none',
         color: 'inherit',
         "&.active": {
-            background:'#3E2C41',
+            color: '#469be0',
+            background:'#ffff',
             borderRadius: '8px',
             padding:"5px 10px"
         },
@@ -52,7 +53,8 @@ const useStyles = makeStyles({
         fontWeight: 'bold',
         fontSize: 14,
         cursor: 'pointer',
-        color: 'crimson'
+        color: '#469be0',
+        margin: '4px'
     },
     logo: {
         marginLeft: 10,
@@ -65,7 +67,7 @@ const useStyles = makeStyles({
         fontWeight:500
     },
     span: {
-        color: "crimson",
+        color: "white",
         transition: "all 0.3s ease",
         fontWeight: 800,
         // color: "white",   
@@ -118,7 +120,10 @@ function Navbar() {
 					            Logout
 				            </button>
                         </Link>
-                      : <Link to={'/login'}><button className={classes.white_btn} onClick={handleLogin}>Login</button></Link>
+                      : (<>
+                      <Link to={'/login'}><button className={classes.white_btn} onClick={handleLogin}>Login</button></Link>
+                      <Link to={'/signup'}><button className={classes.white_btn}>Sign Up</button></Link>
+                      </>)
                 }
             </Toolbar>
         </AppBar>
