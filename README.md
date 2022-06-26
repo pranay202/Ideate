@@ -1,9 +1,9 @@
-# Projecto - The Project Library for Institutes
+# Ideate - The Project Library for Institutes
 
 <table>
 <tr>
 <td>
-  Projecto provides you one safe place for all the projects created in your Institute!
+  Ideate provides you one safe place for all the projects created in your Institute!
 </td>
 </tr>
 </table>
@@ -29,9 +29,6 @@ To provide common knowledge platform for peer learning.
 
 <hr>
 <br>
-
-## Demo
-Here is a working Demo : https://Projecto.vercel.app/
 
 ## Built with 
 
@@ -67,9 +64,9 @@ Here is a working Demo : https://Projecto.vercel.app/
 
 ### Clone the repo.
 
-<img src ="readme_assets/clone-projecto.png"></img>
+<img src ="readme_assets/clone-ideate.png"></img>
 ```
-git clone https://github.com/Pranay202/Projecto.git
+git clone https://github.com/Pranay202/Ideate.git
 ```
 
 <!-- <img src ="readme_assets/images/clone.png"></img> -->
@@ -80,7 +77,7 @@ git clone https://github.com/Pranay202/Projecto.git
 ### Open Terminal on the Folder
 
 ```
-cd Projecto
+cd Ideate
 ```
 
 <br>
