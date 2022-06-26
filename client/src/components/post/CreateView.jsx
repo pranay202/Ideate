@@ -138,6 +138,8 @@ const CreateView = () => {
     const [file, setFile] = useState('');
     const [image, setImage] = useState('');
     const [error, setError] = useState('');
+    const [pic, setPic] = useState();
+    const [picMessage, setPicMessage] = useState();
     
     // const [branch, setBranch] = useState('');
 
@@ -160,6 +162,9 @@ const CreateView = () => {
     //     );
     // }
     // const url = "https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80";
+    
+
+    
     const url = post.picture ? post.picture : "https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80";
     
     useEffect(() => {
@@ -182,6 +187,31 @@ const CreateView = () => {
         console.log(file);
     },[file])
     
+
+    const postDetails = (pics) => {
+        setPicMessage(null);
+        if (pics.type === "image/jpeg" || pics.type === "image/png") {
+          const data = new FormData();
+          data.append("file", pics);
+          data.append("upload_preset", "mernproject");
+          data.append("cloud_name", "pranayscloud");
+          fetch("https://api.cloudinary.com/v1_1/pranayscloud/image/upload", {
+            method: "post",
+            body: data,
+          })
+            .then((res) => res.json())
+            .then((data) => {
+              setPic(data.url.toString());
+              console.log(pic);
+            })
+            .catch((err) => {
+              console.log(err);
+            });
+        } else {
+          return setPicMessage("Please Select an Image");
+        }
+    };
+
     const handleChange = (e) => {
         setPost({ ...post, [e.target.name]: e.target.value });
     }
@@ -218,6 +248,7 @@ const CreateView = () => {
                     type="file"
                     id="fileInput"
                     style={{ display: "none" }}
+                    // onChange={(e) => postDetails(e.target.files[0])}
                     onChange={(e)=>setFile(e.target.files[0])}
                 />
                 <InputBase 

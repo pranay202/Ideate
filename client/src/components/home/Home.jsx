@@ -36,7 +36,7 @@ function Home() {
         <div className="max-width">
             <div className="home-content">
                 <div className="text-1">Welcome to,</div>
-                <h1 className="text-2">ProHub</h1>
+                <h1 className="text-2">Ideate</h1>
                 <div className="text-3">{text} <Cursor /></div>
                 <a href="/projects">Explore</a>
             </div>

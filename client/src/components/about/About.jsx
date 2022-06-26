@@ -12,7 +12,7 @@ function About() {
 						<h1>About Us</h1>
 					</div>
 					<div className="content">
-						<h3>Projecto-The Project Library</h3><br></br>
+						<h3>Ideate-The Project Library</h3><br></br>
 						<p>An online integrated
 							platform to bring all the projects done by the
 							students in the University. The information on this platform will help you in the learning process as we have provided here the projects links,
